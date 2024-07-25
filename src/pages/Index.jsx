@@ -50,7 +50,7 @@ const Index = () => {
               <Checkbox
                 checked={task.completed}
                 onCheckedChange={() => toggleTask(task.id)}
-                className="border-pink-500 text-pink-500"
+                className="border-pink-500 data-[state=checked]:bg-pink-500 data-[state=checked]:text-white"
               />
               <span className={task.completed ? 'line-through text-gray-500' : 'text-gray-800'}>
                 {task.text}
